@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes X 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/transportes.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Transportes X" width="100">
+            <h1>Transportes X</h1>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="holder">
+            <li><a class="{{#if ishome}} activo {{/if}}" href="/">home</a></li>
+            <li><a class="{{#if isnosotros}} activo {{/if}}" href="/nosotros">Nosotros</a></li>
+            <li><a class="{{#if isservicios}} activo {{/if}}" href="/servicios">Servicios</a></li>
+            <li><a class="{{#if isgaleria}} activo {{/if}}" href="/galeria">Galeria</a></li>
+            <li><a class="{{#if isnovedades}} activo {{/if}}" href="/novedades">Novedades</a></li>
+            <li><a class="{{#if iscontacto}} activo {{/if}}" href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="holder">
+        {{{body}}}
+    </main>
+    <footer>
+        <p>diseñado por Ignacio - 2022</p>
+    </footer>
+
+</body>
+
 </html>
