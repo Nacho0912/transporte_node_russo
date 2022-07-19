@@ -21,7 +21,7 @@ router.post("/", async function(req,res,next){
         if(data != undefined){
             res.redirect("/admin/novedades")
             } else{ 
-            res.redirect("admin/login",{
+            res.render("admin/login",{
                 layout: "admin/layout", 
                 error:true
 
